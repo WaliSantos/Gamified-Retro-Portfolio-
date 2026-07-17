@@ -1,13 +1,13 @@
 
-import Logo from "../components/logo";
+import Logo from "../components/Logo";
 import Arcade from "../components/Arcade";
 
 function Cabinet(){
     
     return(
         <>
-            <Arcade/>
             <Logo/>
+            <Arcade/>
         
         </>
         
