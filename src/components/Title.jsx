@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-function Title(){
+function Title(props){
     return(
         <motion.h1
             initial={{y:-50, opacity:0}}
@@ -9,7 +9,7 @@ function Title(){
             className="text-xs md:text-lg lg:text-xl mt-12 md:mt-8 lg:mb-16
                         text-center tracking-widest  drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]"
 
-                >MENU PRINCIPAL - PLAYER 1
+                >{props.children}
         </motion.h1>
     )
 }
