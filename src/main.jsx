@@ -6,6 +6,7 @@ import './styles/index.css'
 import Cabinet from './pages/Cabinet.jsx'
 import Menu from './pages/Menu.jsx'
 import Papers from './pages/Papers.jsx'
+import Projects from './pages/Projects.jsx'
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/papers",
         element: <Papers/>,
+      },
+      {
+        path: "/projects",
+        element: <Projects/>,
       }
     ]
   },

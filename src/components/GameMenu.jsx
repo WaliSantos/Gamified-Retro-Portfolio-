@@ -20,7 +20,7 @@ function GameMenu() {
       label: "Stage Select",
       sub: "Projetos",
       icon: Gamepad2,
-      nav: "/"
+      nav: "/projects"
     },
     {
       id: 3,
