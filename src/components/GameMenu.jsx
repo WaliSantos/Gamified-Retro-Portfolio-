@@ -1,4 +1,4 @@
-import { FileText, Gamepad2, Save, Trophy, User } from "lucide-react";
+import { FileText, Gamepad2, Save, User } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -22,22 +22,16 @@ function GameMenu() {
       icon: Gamepad2,
       nav: "/projects"
     },
+   
     {
       id: 3,
-      label: "High Scores",
-      sub: "Premiações",
-      icon: Trophy,
-      nav: "/"
-    },
-    {
-      id: 4,
       label: "Bonus Stage",
       sub: "Artigos",
       icon: FileText,
       nav: "/papers"
     },
     {
-      id: 5,
+      id: 4,
       label: "Save Data",
       sub: "Baixar Currículo",
       icon: Save,

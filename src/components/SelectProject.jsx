@@ -10,7 +10,7 @@ function SelectProject({
       <h1 className="text-[8px] md:text-[10px] text-zinc-500 tracking-widest animate-pulse">
         SELECT YOUR PROJECT
       </h1>
-      <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-2xl">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-6 max-w-2xl">
         {projectsList.map((p, idx) => (
           <button
             key={p.id}
