@@ -72,7 +72,7 @@ function Display({ activeProject }) {
               {activeProject.tech.map((t, id) => (
                 <span
                   key={id}
-                  className={`px-2 py-1.5 bg-zinc-950 border ${activeProject.border} text-[8px] text-zinc-300`}
+                  className={`px-2 py-1.5 bg-zinc-950 border ${activeProject.border} text-[8px] text-zinc-300 cursor-default`}
                 >
                   {t}
                 </span>

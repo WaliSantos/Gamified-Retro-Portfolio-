@@ -13,7 +13,7 @@ function GameMenu() {
       label: "Player 1",
       sub: "Sobre mim",
       icon: User,
-      nav: "/"
+      nav: "/profile"
     },
     {
       id: 2,

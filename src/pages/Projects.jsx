@@ -15,6 +15,8 @@ function Projects() {
       tech: ["REACT", "TAILWIND", "VITE"],
       color: "text-red-500",
       border: "border-red-500",
+      scrollBar: "scrollbar-thumb-red-700",
+      hoverScrollBar: "hover:scrollbar-thumb-red-500",
       shadow: "shadow-[0_0_15px_rgba(239,68,68,0.6)]",
       image: taskMenagerImg,
       link: "https://task-manager-beryl-phi-39.vercel.app/",
@@ -27,6 +29,8 @@ function Projects() {
       tech: ["VUE.JS", "D3.JS", "FIREBASE", "SASS"],
       color: "text-cyan-400",
       border: "border-cyan-400",
+      scrollBar: "scrollbar-thumb-cyan-700",
+      hoverScrollBar: "hover:scrollbar-thumb-cyan-400",
       shadow: "shadow-[0_0_15px_rgba(34,211,238,0.6)]",
       image: taskMenagerImg,
       link: "https://task-manager-beryl-phi-39.vercel.app/",
@@ -43,8 +47,9 @@ function Projects() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.3, type: "spring" }}
       exit={{ opacity: 0, x: -50 }}
-      className="absolute inset-0  bg-[#050505 ] w-full h-full flex flex-col
-                p-6 md:p-8 lg:p-12 z-50 overflow-y-auto  "
+      className={`absolute inset-0  bg-[#050505 ] w-full h-full flex flex-col
+                p-6 md:p-8 lg:p-12 z-50 overflow-y-auto scrollbar scrollbar-track-black
+                ${activeProject.scrollBar} ${activeProject.hoverScrollBar}`}
     >
       <ButtonBack nav="/menu">Back to Menu</ButtonBack>
       <Title>CHOOSE YOUR FIGHTER</Title>

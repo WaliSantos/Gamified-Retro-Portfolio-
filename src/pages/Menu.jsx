@@ -5,9 +5,9 @@ import ButtonBack from "../components/ButtonBack";
 
 function Menu() {
   return (
-    <motion.div className="absolute inset-0 bg-[#050505] w-full h-full flex flex-col items-center p-6 md:p-12 lg:p-16 z-50 ">
+    <motion.div className="absolute inset-0 bg-[#050505] w-full h-full flex flex-col items-center p-6 md:p-8 lg:p-12 z-50 ">
       
-      <ButtonBack nav = "/">BACK TO ARCADE</ButtonBack>
+      <ButtonBack nav = "/">EXIT</ButtonBack>
       <Title>MENU PRINCIPAL - PLAYER 1</Title> 
       <GameMenu />
     </motion.div>

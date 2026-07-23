@@ -11,7 +11,9 @@ function Papers() {
       transition={{ delay: 0.3, type: "spring" }}
       exit={{ opacity: 0, x: -50 }}
       className="absolute inset-0  bg-[#050505 ] w-full h-full flex flex-col
-                p-6 md:p-12 lg:p-16 z-50 overflow-y-auto  "
+                p-6 md:p-8 lg:p-12 z-50 overflow-y-auto scrollbar scrollbar-track-black
+                scrollbar-thumb-yellow-700  hover:scrollbar-thumb-yellow-500
+                 "
     >
       <ButtonBack nav={"/menu"}> Back to Menu</ButtonBack>
       <Title>BONUS STAGE - PAPERS</Title>
