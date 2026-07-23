@@ -2,6 +2,7 @@ import { FileText, Gamepad2, Save, User } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import curriculo from "../assets/Walisson_CV.pdf";
 
 function GameMenu() {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -13,31 +14,44 @@ function GameMenu() {
       label: "Player 1",
       sub: "Sobre mim",
       icon: User,
-      nav: "/profile"
+      nav: "/profile",
     },
     {
       id: 2,
       label: "Stage Select",
       sub: "Projetos",
       icon: Gamepad2,
-      nav: "/projects"
+      nav: "/projects",
     },
-   
+
     {
       id: 3,
       label: "Bonus Stage",
       sub: "Artigos",
       icon: FileText,
-      nav: "/papers"
+      nav: "/papers",
     },
     {
       id: 4,
       label: "Save Data",
       sub: "Baixar Currículo",
       icon: Save,
-      nav: "/"
+      file: curriculo,
     },
   ];
+
+  const handleItemClick = (item) => {
+    if (item.file) {
+      const link = document.createElement("a");
+      link.href = curriculo;
+      link.download = "walisson_cv.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (item.nav) {
+      navigate(item.nav);
+    }
+  };
   return (
     <motion.ul
       initial={{ opacity: 0 }}
@@ -56,7 +70,7 @@ function GameMenu() {
             className={`flex items-center gap-4 md:gap-6 p-3 md:p-4
                                     cursor-pointer transition-all duration-200
                                     group ${hoveredItem == item.id ? "bg-zinc-900/50 scale-[1.02]" : "opacity-70 hover:opacity-95 "}`}
-            onClick={()=>{navigate(item.nav)}}
+            onClick={()=> handleItemClick(item)}
           >
             <div className="w-6 md:w-8 flex justify-center ">
               {hoveredItem == item.id ? (
