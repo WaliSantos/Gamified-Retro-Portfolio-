@@ -18,7 +18,7 @@ function GameMenu() {
     },
     {
       id: 2,
-      label: "Stage Select",
+      label: "Character Select",
       sub: "Projetos",
       icon: Gamepad2,
       nav: "/projects",

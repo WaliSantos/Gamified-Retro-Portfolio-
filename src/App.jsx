@@ -10,13 +10,13 @@ function App() {
   return (
     <div 
       className="flex flex-col items-center justify-center
-                 bg-black text-white w-screen h-screen 
+                 bg-black text-white min-w-screen min-h-screen 
                  overflow-hidden font-['Press_Start_2P'] relative selection:bg-zinc-800"
       style={{fontFamily:  "'Press Start 2P', monospace"}}
 
     >
       <AnimatePresence mode="wait">
-        <div key={location.pathname} className="w-full h-full flex items-center justify-center">
+        <div key={location.pathname} className="w-full h-full flex flex-col items-center justify-center">
           {currentOutlet}
         </div>
         

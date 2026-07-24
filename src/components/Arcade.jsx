@@ -23,14 +23,20 @@ function Arcade() {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 1.5 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className=" w-full h-full max-w-2xl 
-                            flex flex-col items-center justify-center"
+      // className=" w-full h-full max-w-2xl 
+      //                       flex flex-col items-center justify-center"
+                            className="flex-1 w-full flex flex-col items-center justify-center p-4 md:p-0"
     >
       <div
+        // className="relative bg-zinc-950 border-zinc-900 
+        //                         w-3/4 max-w-md aspect-[3/4] border-[16px] 
+        //                         rounded-t-3xl rounded-b-lg p-4 md:p-8 shadow-2xl 
+        //                         flex flex-col items-center justify-center"
         className="relative bg-zinc-950 border-zinc-900 
-                                w-3/4 max-w-md aspect-[3/4] border-[16px] 
-                                rounded-t-3xl rounded-b-lg p-4 md:p-8 shadow-2xl 
-                                flex flex-col items-center justify-center"
+               w-3/4 max-w-md aspect-[3/4] 
+               border-[10px] md:border-[16px] 
+               rounded-t-3xl rounded-b-lg p-4 md:p-8 shadow-2xl 
+               flex flex-col items-center justify-center"
       >
         <motion.button className="bg-[#0a0a0a] border-zinc-800 
                                 border-4 w-full aspect-square 

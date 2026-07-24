@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="64" height="64">
+  <!-- Base do Joystick (Metal/Preto) -->
+  <rect x="6" y="11" width="4" height="4" rx="1" fill="#333"/>
+  <rect x="7" y="8" width="2" height="4" fill="#999"/> <!-- Haste metal -->
+  
+  <!-- Esfera (Neon Blue) -->
+  <circle cx="8" cy="6" r="5" fill="#00FFFF" stroke="#00CCCC" stroke-width="1"/>
+  
+  <!-- Brilho na Esfera -->
+  <circle cx="6" cy="4" r="1.5" fill="white" opacity="0.8"/>
+
+  <!-- Mini 'W' Pixel Art na esfera (Preto) -->
+  <g fill="#000000" opacity="0.7">
+    <rect x="6" y="5" width="1" height="3"/>
+    <rect x="7" y="7" width="2" height="1"/>
+    <rect x="9" y="5" width="1" height="3"/>
+    <rect x="8" y="6" width="1" height="1"/>
+  </g>
+</svg>
