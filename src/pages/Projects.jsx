@@ -38,7 +38,7 @@ function Projects() {
       hoverScrollBar: "hover:scrollbar-thumb-cyan-400",
       shadow: "shadow-[0_0_15px_rgba(34,211,238,0.6)]",
       image: arcadePortfolio,
-      link: "https://task-manager-beryl-phi-39.vercel.app/",
+      link: "https://walisantos.vercel.app/",
       linkGit: "https://github.com/WaliSantos/Gamified-Retro-Portfolio-",
     },
     {
