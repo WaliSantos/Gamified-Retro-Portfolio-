@@ -24,7 +24,7 @@ function Projects() {
       hoverScrollBar: "hover:scrollbar-thumb-red-500",
       shadow: "shadow-[0_0_15px_rgba(239,68,68,0.6)]",
       image: taskMenagerImg,
-      link: "https://task-manager-beryl-phi-39.vercel.app/",
+      link: "https://waly-tasks.vercel.app/",
       linkGit: "https://github.com/WaliSantos/Task-Manager",
     },
     {
