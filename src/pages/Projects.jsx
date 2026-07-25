@@ -69,7 +69,7 @@ function Projects() {
     },
     {
       id: "05",
-      title: "Art-Gallery",
+      title: "ART-GALLERY",
       desc: "Galeria interativa de modelos 3D desenvolvida com Three.js, utilizando renderização em tempo real para proporcionar uma experiência imersiva no navegador.",
       tech: ["JAVA SCRIPT", "THREE.JS"],
       image:artGallery,
