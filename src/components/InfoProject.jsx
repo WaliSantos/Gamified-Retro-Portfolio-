@@ -19,7 +19,7 @@ function InfoProject({activeProject}){
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className=" text-[9px] md:text-[10px] text-zinc-300 leading-[2]"
+          className=" text-[9px] md:text-[10px] text-zinc-300 leading-[2] text-justify"
         >
           {activeProject.desc}
         </motion.p>

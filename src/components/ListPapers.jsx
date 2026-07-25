@@ -11,10 +11,24 @@ function ListPapers() {
     },
     {
       id: 2,
-      date: "26.05.2025",
+      date: "05.09.2025",
       title:
-        "Computer Vision-based YOLO11 for automated damage assessment of public building roofs supporting maintenance management",
-      nav: "/",
+        "Avaliação das redes YOLO para detecção de danos em coberturas em tempo real visando apoio a gestão de manutenção",
+      nav: "https://eventos.antac.org.br/index.php/sbtic/article/view/7510",
+    },
+    {
+      id: 3,
+      date: "05.09.2025",
+      title:
+        "Estudo comparativo das versões da YOLO 11 visando a automatização de inspeções de telhados para fins de manutenção",
+      nav: "https://eventos.antac.org.br/sbtic/article/view/7507",
+    },
+    {
+      id: 4,
+      date: "07.10.2024",
+      title:
+        "Uso de Data Augmentation para reconhecimento automatizado de anomalias em fachada",
+      nav: "https://eventos.antac.org.br/entac/article/view/5843",
     },
   ];
   return (
